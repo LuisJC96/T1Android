@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/mensaje"
         android:layout_width="361dp"
-        android:layout_height="433dp"
+        android:layout_height="127dp"
         android:text="Hello World!"
         android:textSize="40sp"
         app:autoSizeMaxTextSize="40sp"
@@ -17,50 +17,16 @@
         app:autoSizeStepGranularity="5sp"
         app:autoSizeTextType="uniform"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.117" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="138dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Select a number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.225"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.764" />
-
-    <Button
-        android:id="@+id/anterior"
-        android:layout_width="99dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:onClick="anterior"
-        android:text="Anterior Frase"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.692"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.869" />
+        app:layout_constraintVertical_bias="0.356" />
 
     <Button
         android:id="@+id/siguiente"
-        android:layout_width="108dp"
-        android:layout_height="60dp"
+        android:layout_width="103dp"
+        android:layout_height="62dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -69,32 +35,32 @@
         android:text="Siguiente Frase"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.876" />
+        app:layout_constraintVertical_bias="0.678" />
 
     <Button
         android:id="@+id/ChangeTimeDay"
-        android:layout_width="107dp"
-        android:layout_height="60dp"
+        android:layout_width="98dp"
+        android:layout_height="55dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="11dp"
         android:onClick="ChangeTimeDay"
         android:text="Day Time"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.668" />
 
     <Button
         android:id="@+id/ChangeTimeNight"
-        android:layout_width="116dp"
-        android:layout_height="64dp"
+        android:layout_width="97dp"
+        android:layout_height="52dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -103,26 +69,22 @@
         android:text="Night Time"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintHorizontal_bias="0.904"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.987" />
+        app:layout_constraintVertical_bias="0.667" />
 
-    <Button
-        android:id="@+id/button2"
+    <EditText
+        android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:onClick="GoThere"
-        android:text="Go There"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.734"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.764" />
+        tools:layout_editor_absoluteY="330dp" />
 
 </android.support.constraint.ConstraintLayout>

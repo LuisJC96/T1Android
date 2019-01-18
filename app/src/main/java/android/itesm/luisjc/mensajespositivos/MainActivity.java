@@ -2,25 +2,48 @@ package android.itesm.luisjc.mensajespositivos;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView textView;
+    private EditText editText;
+    private int alfa;
+    private static final String TAG = "POSITIVE";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        alfa = (int)(Math.random() * mensajes.length);
         textView = findViewById(R.id.mensaje);
         textView.setText("Hola Android");
+
+        editText = (EditText) findViewById(R.id.editText);
+        Toast.makeText( this, "Hardcodedstuff", Toast.LENGTH_LONG).show();
+        Log.i(TAG, "Welcome to Vietnam");
+
     }
-
+    public void GoThere(View view){
+        String beta = editText.getText().toString();
+        int gamma = Integer.parseInt(beta);
+        if(gamma > mensajes.length || gamma<0){
+            Toast.makeText( this, "No puedo obtener esa frase", Toast.LENGTH_LONG).show();
+        }
+        else {
+            textView.setText(mensajes[gamma]);
+        }
+    }
     public void siguiente(View view){
-        int random = (int)(Math.random() * mensajes.length);
-
-        textView.setText(mensajes[random]);
+        alfa = (alfa+1)%mensajes.length;
+        textView.setText(mensajes[alfa]);
+    }
+    public  void anterior(View view){
+        alfa = (alfa-1)%mensajes.length;
+        textView.setText(mensajes[alfa]);
     }
     public void ChangeTimeDay(View view){
         view = this.getWindow().getDecorView();
